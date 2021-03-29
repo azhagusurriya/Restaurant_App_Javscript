@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: rgb(150, 150, 210);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.imglarge{
+  width: 240px;
+  height:240px;
+}
+
+.center{
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.rowMenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.column{
+    flex:20%;
+    max-width: 40%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.allMenus {
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 10px;
+  padding: 10pt;
+}
+
+.borderHover{
+  border: 3px solid indigo;
+}
+
+
+.isActive{
+  border: 5px solid red;
+}
+
+.card-price{
+  color: green;
+  font-size: 20px;
+}
+.card-title{
+
+}
+#modalImage{
+  width: 400px;
+  height:400px;
+}
+
+span.stars, span.stars span {
+    display: block;
+    background: url(stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+a:link{
+  text-decoration: none;
+}
+
+.logoHeaderText{
+  padding:5px
+  margin-left: 5px;
+}
+
+/* only two column for 800px or less screen width */
+@media screen and (min-width: 601px && max-width: 1200px) {
+  .column{
+      flex: 40%;
+      max-width: 40%;
+      margin: 5px;
+      padding: 5px;
+
+  }
+}
+
+/* only one column for 600px or less screen width */
+@media screen and (max-width: 600px) {
+  .column{
+      flex: 100%;
+      max-width: 100%;
+      margin: 5px;
+      padding: 5px;
+  }
+}

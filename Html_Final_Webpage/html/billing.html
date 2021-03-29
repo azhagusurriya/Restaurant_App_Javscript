@@ -1,0 +1,99 @@
+<!-- Name: Yashwanth Paranthaman
+Student Id: 101282474 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="../js/billing.js" defer="true"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="../css/billing.css">
+</head>
+<body>
+  <nav class="indigo">
+    <div class="nav-wrapper">
+      <a href="menu.html" class="brand-logo"> Chennai Food </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="menu.html">Menu List</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Logout</a></li>
+        <li><a href="cart.html"><span class="new badge red" data-badge-caption="Cart" id="favCount"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-10 col-lg-10 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Billing Details</h5>
+            <form action="menu.html" class="form-signin" method="post" name="billingDetails" onsubmit="return confirmOrder()">
+              <div class="form-label-group">
+                <label for="name">Name : </label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+              </div>
+
+              <div class="form-label-group">
+                <label for="name">Email : </label>
+                <input type="email" name="email" id = "email" class="form-control" required placeholder="Email Address">
+              </div>
+
+              <div class="form-label-group">
+                <label for="name">Contact : </label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" maxlength="15" required>
+              </div>
+
+              <div class="form-label-group">
+                <label for="name">Address : </label>
+                <input type="text" name="address" id="address" class="form-control" placeholder="Address" required>
+              </div>
+
+              <div class="form-label-group">
+                <label for="name">Card Details : </label>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input type="tel" name="cardNo" id="cardNo" class="form-control" placeholder="Card Number" min="16" max="16">
+                  </div>
+                  <div class="col-sm-2">
+                    <input type="tel" name="cvv" id="cvv" class="form-control" maxlength="3" placeholder="CVV">
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <input type="text" name="cardholder" id="cardholder" class="form-control"  placeholder="Name on Card">
+                </div>
+              </div>
+              <br>
+              <button class="btn btn-lg btn-primary btn-block " style="text-align: center; line-height: 5px;" type="submit">Conirm Order</button>
+              <br>
+            </form>
+
+            <div class="row">
+              <div class="col-sm">
+                <button class="btn btn-lg btn-primary btn-block" style="text-align: center; line-height: 5px;" onclick="saveDetails()">Save Card details</button>
+              </div>
+              <div class="col-sm">
+                        <button class="btn btn-lg btn-primary btn-block" style="text-align: center; line-height: 5px;" onclick="deleteCard()">Delete Card</button>
+              </div>
+              </div>
+            <div class="form-label-group" id="output">
+              <p id="error"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

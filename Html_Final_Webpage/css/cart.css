@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.smallImage{
+  width: 60px;
+  height:60px;
+}
+
+
+.center{
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.column{
+    flex:10%;
+    max-width: 20%;
+    margin: auto;
+    padding: auto;
+}
+
+.right{
+  margin-right: 240px;
+}
+
+.middle{
+  margin: auto;
+  width: 30%;
+  border: 3px red;
+  padding: 10px;
+}
+
+.BillingColumn{
+  margin: auto;
+  width: 50%;
+  border: 2px dotted red;
+  padding: 10px;
+}
+
+.textDesign{
+  background-color: black;
+  color:white;
+  padding: 2px;
+  margin:25px;
+}
+
+a:link{
+  text-decoration: none;
+}

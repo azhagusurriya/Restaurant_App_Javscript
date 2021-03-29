@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/menu.css">
+    <script type="text/javascript" src="../js/menu.js" defer="true"></script>
+  </head>
+  <body>
+
+    <nav class="indigo">
+      <div class="nav-wrapper">
+        <a href="menu.html" class="brand-logo logoHeaderText">  Chennai Food </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="menu.html">Menu List</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login.html">Logout</a></li>
+          <li><a href="cart.html"><span class="new badge red" data-badge-caption="Cart" id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center">
+      <img class="materialboxed center" id="modalImage"/>
+      <h4 id="modalTitle">Modal Header</h4>
+      <p id="modalBody">A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="menu.html" class="modal-close waves-effect waves-green btn indigo">OK</a>
+    </div>
+  </div>
+
+
+    <div id="mainContainer">
+        <div class="center">
+          <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle sortButtonName" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" id="sortAlphabeticallyAsc" href="#">Menu (Ascending)</a>
+    <a class="dropdown-item" id="sortAlphabeticallyDsc" href="#">Menu (Descending)</a>
+    <a class="dropdown-item" id="sortPriceAsc" href="#">Price (Low to High)</a>
+    <a class="dropdown-item" id="sortPriceDsc" href="#">Price (High to Low)</a>
+    <a class="dropdown-item" id="sortRating" href="#">Rating (Highest)</a>
+    <a class="dropdown-item" id="sortAvailability" href="#">Availability</a>
+    <a class="dropdown-item" id="outOfStock" href="#">Out Of Stock</a>
+  </div>
+</div>
+          <div id='data' class="rowMenu">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

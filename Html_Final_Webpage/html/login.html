@@ -1,0 +1,49 @@
+<!-- Name: Yashwanth Paranthaman
+Student Id: 101282474 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Hakuna Matata</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script type="text/javascript" src="../js/register.js" defer="true"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <h1 class="text-uppercase"> Chennai Foods </h1>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form action="menu.html" class="form-signin" method="post" name="login" onsubmit="return loginUser()">
+              <div class="form-label-group">
+                <input type="text" name="username" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="form-label-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <br>
+              <p>New Customer? <a href="signup.html"> Sign up here </a> </p>
+            </form>
+            <div class="form-label-group" id="output" hidden>
+              <p>Incorrect Username/Password</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- Name: Yashwanth Paranthaman
+Student Id: 101282474 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="../js/app.js" defer="true"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="indigo">
+        <div class="nav-wrapper">
+          <a href="menu.html" class="brand-logo"> Chennai Food </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="menu.html">Menu List</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+            <li><a href="cart.html"><span class="new badge red" data-badge-caption="Cart" id="favCount"></span></a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Sign Up</h5>
+                <form class="form-signin" method="post" name="updateProfile" onsubmit="return changeDetails()">
+                  <div class="form-label-group">
+                  <label for="name">Name : </label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                  </div>
+
+                  <div class="form-label-group">
+                    <label for="name">Email : </label>
+                    <input type="email" name="email" id = "email" class="form-control" required placeholder="Email Address" onchange="validateEmail()">
+                  </div>
+
+                  <div class="form-label-group">
+                    <label for="name">Contact : </label>
+                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" maxlength="15" required>
+                  </div>
+
+                  <div class="form-label-group">
+                    <label for="name">Address : </label>
+                    <input type="text" name="address" id="address" class="form-control" placeholder="Address" required>
+                  </div>
+
+                  <br>
+
+                  <button type="button" name="button" class="btn btn-lg btn-primary btn-block text-uppercase" style="text-align: center; line-height: 5px;" onclick="changePassword()">Change Password</button>
+
+                  <div class="form-label-group">
+                    <label for="Password">Password : </label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required disabled>
+                  </div>
+
+                  <div class="form-label-group">
+                    <label for="Password">Confirm Password : </label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password" onchange="validatePassword()" required disabled>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block " style="text-align: center; line-height: 5px;" type="submit">Update Profile</button>
+                  <br>
+                  <button type="button" name="button" class="btn btn-lg btn-primary btn-block" style="text-align: center; line-height: 5px;" onclick="deleteProfile()">Delete Profile</button>
+                  <br>
+                </form>
+                <div class="form-label-group" id="output">
+                  <p id="error"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
